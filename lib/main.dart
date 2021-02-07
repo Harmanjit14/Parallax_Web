@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:parallax_web/landingPage.dart';
+import 'landingPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,8 +15,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primarySwatch: Colors.purple,
       ),
-      home: LandingPage() ,
+      home: LandingPage(),
     );
   }
 }
-

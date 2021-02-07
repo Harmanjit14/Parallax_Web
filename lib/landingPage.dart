@@ -8,8 +8,11 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black.withOpacity(0.3),
+        title: Text("Harmanjit Singh"),
+      ),
     );
   }
 }
