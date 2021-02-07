@@ -11,21 +11,24 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Column(
-        mainAxisSize: MainAxisSize.min,
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
+      body: Stack(
+        alignment: Alignment.topCenter,
         children: [
-          Stack(
-            alignment: Alignment.topCenter,
+          ListView(
+            scrollDirection: Axis.vertical,
+            physics: BouncingScrollPhysics(),
             children: [
               Parallax(),
-              Container(
-                height: 60,
-                width: size.width,
-                color: Colors.black.withOpacity(0.5),
-              ),
             ],
+          ),
+          Container(
+            height: 60,
+            width: size.width,
+            color: Colors.black.withOpacity(0.5),
+            padding: EdgeInsets.all(20),
+            child: Row(
+              children: [Text("Harmanjit Singh")],
+            ),
           ),
         ],
       ),

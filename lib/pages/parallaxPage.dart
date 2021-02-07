@@ -10,7 +10,6 @@ class _ParallaxState extends State<Parallax> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Container(
-      height: size.height,
       width: size.width,
       child: Stack(
         alignment: Alignment.bottomCenter,
